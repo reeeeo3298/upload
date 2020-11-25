@@ -4,7 +4,7 @@
 @endsection
 
 @section('content')
-<h1>申込情報管理画面</h1>
+<h1>都市ガス申込情報管理画面</h1>
     <!-- フラッシュメッセージ -->
         @if(session()->has('flash_message_success'))
             <div class="alert alert-success mb-3">
@@ -19,7 +19,7 @@
     <div class="customer_manegement_block panel panel-default">
          <div class="panel-heading">お客様情報検索</div>
            <div class="panel-body"> 
-             {{ Form::open(array('url' => '/customer_search','id'=>'customer_search_detail' ,'class' => 'form-horizontal','method' => 'get')) }}
+             {{ Form::open(array('url' => '/customer_citygas_search','id'=>'customer_search_detail' ,'class' => 'form-horizontal','method' => 'get')) }}
              <div class="form-group">
                  <div class="col-sm-6 form_date">
                      <div class="col-sm-3">申込期間</div>
@@ -84,7 +84,7 @@
                      </div>
                  </div>
 
-                 <div class="col-sm-6 form_type">
+<!--                 <div class="col-sm-6 form_type">
                      <div class="col-sm-3">供給エリア</div>
                      <div class="col-sm-5 form-inline dropdown" style="padding: 3px;">
                        <select id="select_type" name="area_type" class="form-control">
@@ -99,7 +99,7 @@
                          <option value="9">九州</option>
                        </select>
                      </div>
-                 </div>
+                 </div>-->
              </div>
             
 
@@ -112,7 +112,7 @@
     </div>
     <div class="middle_block">
         <div class="csv_output">
-            {{Form::open(array('url' => '/csv','id'=>'csv_output' ,'class' => 'form-horizontal','method' => 'post')) }}
+            {{Form::open(array('url' => '/csv_citygas','id'=>'csv_output' ,'class' => 'form-horizontal','method' => 'get')) }}
                 <button type="submit" class="btn btn-success btn-xm csv_btn">csv出力</button>
                 <input type="hidden" name="search_results" value="{{$results}}">
             {{ Form::close() }}
@@ -130,7 +130,7 @@
                     <th>メールアドレス</th>
                     <th>供給地点特定番号</th>
                     <th>料金プラン</th>
-                    <th>契約容量</th>
+                    <!--<th>契約容量</th>-->
                     <th>支払方法</th>
                     <th>処理</th>
                 </tr>
@@ -161,14 +161,14 @@
                     <td class="mail_address"><p>{{$r->mail_address}}</p></td>
                     <td class="supply_no"><p>{{$r->supply_no}}</p></td>
                     <td class="plan_name"><p>{{$r->plan_name}}</p></td>
-                    <td class="a_capacity"><p>{{$r->a_capacity}}</p></td>
+                    <!--<td class="a_capacity"><p>{{$r->a_capacity}}</p></td>-->
                     <td class="payment"><p>{{$r->payment}}</p></td>
                     <td>
                         <div class="detail_btn_block">
-                            <button type="button" class="btn btn-info btn-xs detail_btn">詳細</button>
+                            <button type="button" class="btn btn-info btn-xs detail_citygas_btn">詳細</button>
                         </div>
                         <div class="add_btn_block">
-                            {{Form::open(array('url' => '/add','id'=>'add_view' ,'class' => 'form-horizontal','method' => 'get')) }}
+                            {{Form::open(array('url' => '/add_citygas','id'=>'add_view' ,'class' => 'form-horizontal','method' => 'get')) }}
                                 <button type="submit" class="btn btn-success btn-xs add_btn">登録</button>
                                 <input type="hidden" name="accept_no" id="accept_no" value="{{$r->accept_no}}">
                             {{ Form::close() }}
@@ -226,7 +226,7 @@
                     <th>現小売事業者お客様番号</th>
                     <td><span id="now_customer_no"></span></td>
                 </tr>
-                <tr>
+<!--                <tr>
                     <th>契約容量</th>
                     <td><span id="contracted_capacity"></span></td>
                 </tr>
@@ -241,7 +241,7 @@
                 <tr>
                     <th>KW容量</th>
                     <td><span id="kw_capacity"></span></td>
-                </tr>
+                </tr>-->
                 <tr>
                     <th>料金メニュー</th>
                     <td><span id="plan_name"></span></td>

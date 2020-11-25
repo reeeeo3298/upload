@@ -22,14 +22,10 @@ header {
     header .header-block .header-list {
       list-style: none;
       display: inline-block;
-      margin-left: 3em;
-      margin-bottom: 0; }
-      header .header-block .header-list li {
-        float: left;
-        padding: 0 30px; }
-        header .header-block .header-list li a {
-          color: white;
-          font-size: 1.8rem; }
+      margin-left: 3em; }
+      header .header-block .header-list li a {
+        color: white;
+        font-size: 1.8rem; }
     header .header-block .login_info {
       position: absolute;
       top: 30px;
@@ -61,10 +57,6 @@ header {
       text-align: center;
       padding-top: 40px; }
       .content-block .img-block .conplete_btn_block .complete_btn {
-        width: 60%;
-        padding: 20px;
-        font-size: 4rem; }
-      .content-block .img-block .conplete_btn_block .complete_citygas_btn {
         width: 60%;
         padding: 20px;
         font-size: 4rem; }
