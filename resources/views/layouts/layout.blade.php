@@ -23,7 +23,8 @@
                 
                 @if(session()->has('name'))
                 <ul class="header-list">
-                    <li><a href="/Lpio_upload/list">お客様一覧</a></li>
+                    <li><a href="/Lpio_upload/list">でんき</a></li>
+                    <li><a href="/Lpio_upload/list_citygas">都市ガス</a></li>
                 </ul>
                 <div class="login_info">   
                     <p>ログイン：{{session('name')}}</p>
