@@ -303,10 +303,10 @@ class UploadController extends Controller
                 '',//取引先連絡先１市外局番
                 '',//取引先連絡先１市内局番
                 '',//取引先連絡先１加入者番号
-                $list['last_name'],//需要者名（姓）
-                $list['first_name'],//需要者名（名）
-                $list['last_name_kana'],//需要者名カナ（姓）
-                $list['first_name_kana'],//需要者名カナ（名）
+                $list['first_name'],//需要者名（姓）
+                $list['last_name'],//需要者名（名）
+                $list['first_name_kana'],//需要者名カナ（姓）
+                $list['last_name_kana'],//需要者名カナ（名）
                 $list['add_no'],//需要者郵便番号
                 $list['add_pref'],//需要者都道府県
                 $list['add_city'],//需要者市区郡
@@ -358,8 +358,8 @@ class UploadController extends Controller
                 '',//申込者電話番号加入者番号
                 '',//申込者様との関係
                 '',//申込者様との関係（その他）
-                '010',//営業所
-                '000009',//代理店コード
+                '030',//営業所
+                '000099',//代理店コード
                 '',//キャンペーンコード
           ]);
         }
@@ -483,10 +483,10 @@ class UploadController extends Controller
                 '',//取引先連絡先１市外局番
                 '',//取引先連絡先１市内局番
                 '',//取引先連絡先１加入者番号
-                $list['last_name'],//需要者名（姓）
-                $list['first_name'],//需要者名（名）
-                $list['last_name_kana'],//需要者名カナ（姓）
-                $list['first_name_kana'],//需要者名カナ（名）
+                $list['first_name'],//需要者名（姓）
+                $list['last_name'],//需要者名（名）
+                $list['first_name_kana'],//需要者名カナ（姓）
+                $list['last_name_kana'],//需要者名カナ（名）
                 $list['add_no'],//需要者郵便番号
                 $list['add_pref'],//需要者都道府県
                 $list['add_city'],//需要者市区郡

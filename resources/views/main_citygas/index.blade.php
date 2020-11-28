@@ -39,20 +39,20 @@
                  <div class="col-sm-6 form_status">
                      <div class="col-sm-3">名前</div>
                      <div class="col-sm-5 form-inline name_form_width" style="padding: 3px;">
-                        姓<input type="text" class="form-control last_name" name="last_name" id="last_name" placeholder="" />
+                        姓<input type="text" class="form-control last_name" name="first_name" id="first_name" placeholder="" />
                      </div>
                      <div class="col-sm-5 form-inline name_form_width" style="padding: 3px;">
-                        名<input type="text" class="form-control first_name" name="first_name" id="first_name" placeholder="" />
+                        名<input type="text" class="form-control first_name" name="last_name" id="last_name" placeholder="" />
                      </div>
                  </div>
 
                  <div class="col-sm-6 form_type">
                      <div class="col-sm-3">名前(カナ)</div>
                      <div class="col-sm-5 form-inline name_form_width" style="padding: 3px;">
-                        姓<input type="text" class="form-control last_name_kana" name="last_name_kana" id="last_name_kana" placeholder="" />
+                        姓<input type="text" class="form-control last_name_kana" name="first_name_kana" id="first_name_kana" placeholder="" />
                      </div>
                      <div class="col-sm-5 form-inline name_form_width" style="padding: 3px;">
-                        名<input type="text" class="form-control first_name_kana" name="first_name_kana" id="first_name_kana" placeholder="" />
+                        名<input type="text" class="form-control first_name_kana" name="last_name_kana" id="last_name_kana" placeholder="" />
                      </div>
                  </div>
              </div>
@@ -156,7 +156,7 @@
                         </p>
                     </td>
                     <td class="add_date"><p>{{$r->add_date}}</p></td>
-                    <td class="name"><p>{{$r->last_name}}{{$r->first_name}}</p></td>
+                    <td class="name"><p>{{$r->first_name}}{{$r->last_name}}</p></td>
                     <td class="tel"><p>{{$r->tel1}}{{$r->tel2}}{{$r->tel3}}</p></td>
                     <td class="mail_address"><p>{{$r->mail_address}}</p></td>
                     <td class="supply_no"><p>{{$r->supply_no}}</p></td>
@@ -253,6 +253,10 @@
                 <tr>
                     <th>キャンペーンCD</th>
                     <td><span id="campaign_cd"></span></td>
+                </tr>
+                <tr>
+                    <th>代理店CD</th>
+                    <td><span id="agency_cd"></span></td>
                 </tr>
             </tbody>
         </table>

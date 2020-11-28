@@ -30,19 +30,19 @@
                 </tr>
                 <tr>
                     <th>お客様名(姓)</th>
-                    <td><input type="text" id="last_name" name="last_name" value="{{$results->last_name}}"></td>
-                </tr>
-                <tr>
-                    <th>お客様名(名)</th>
                     <td><input type="text" id="first_name" name="first_name" value="{{$results->first_name}}"></td>
                 </tr>
                 <tr>
+                    <th>お客様名(名)</th>
+                    <td><input type="text" id="last_name" name="last_name" value="{{$results->last_name}}"></td>
+                </tr>
+                <tr>
                     <th>お客様名カナ(姓)</th>
-                    <td><input type="text" id="last_name_kana" name="last_name_kana" value="{{$results->last_name_kana}}"></td>
+                    <td><input type="text" id="first_name_kana" name="first_name_kana" value="{{$results->first_name_kana}}"></td>
                 </tr>
                 <tr>
                     <th>お客様名カナ(名)</th>
-                    <td><input type="text" id="first_name_kana" name="first_name_kana" value="{{$results->first_name_kana}}"></td>
+                    <td><input type="text" id="last_name_kana" name="last_name_kana" value="{{$results->last_name_kana}}"></td>
                 </tr>
                 <tr>
                     <th>郵便番号</th>
@@ -130,6 +130,10 @@
                 <tr>
                     <th>キャンペーンCD</th>
                     <td><input type="text" name="campaign_cd" value="{{$results->campaign_cd}}"></td>
+                </tr>
+                <tr>
+                    <th>代理店CD</th>
+                    <td><input type="text" name="agency_cd" value="{{$results->agency_cd}}"></td>
                 </tr>
                 <input type="hidden" name="accept_no" id="accept_no" value="{{$results->accept_no}}">
                 {{ Form::close() }}

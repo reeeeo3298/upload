@@ -62,8 +62,8 @@ $(function(){
             var campaign_cd = data[0].campaign_cd === null ? "" : data[0].campaign_cd;
             
             $('#supply_no_modal').text(supply_no); 
-            $('#name').text(last_name + first_name); 
-            $('#name_kana').text(last_name_kana + first_name_kana); 
+            $('#name').text(first_name + last_name); 
+            $('#name_kana').text(first_name_kana + last_name_kana); 
             $('#add_no').text(add_no);
             $('#address').text(add_pref + add_city + add_detail + add_building + add_building_no);  
             $('#mail_address_modal').text(mail_address); 
